@@ -1,0 +1,10 @@
+CREATE DATABASE IF NOT EXISTS `sponty`
+CHARACTER SET utf8mb4
+COLLATE utf8mb4_unicode_ci;
+
+CREATE USER 'sponty'@'%' IDENTIFIED BY 'sponty';
+
+GRANT ALL PRIVILEGES ON `sponty`.* 
+TO 'sponty'@'%';
+
+FLUSH PRIVILEGES;
