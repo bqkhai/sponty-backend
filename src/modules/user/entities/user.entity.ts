@@ -17,7 +17,7 @@ export class User extends BaseModel {
   password: string;
 
   @Column({ nullable: true })
-  deviceId?: string;
+  avatar?: string;
 
   @Column({ type: 'enum', enum: RecordStatus, default: RecordStatus.ACTIVE })
   status: RecordStatus;
